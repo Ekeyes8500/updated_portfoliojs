@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About | Eric Keyes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/javascript/main.js"></script>
+   
+
+</head>
+<span id="about-scrolltarget"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a href="/" class="navbar-brand namefont">Eric Keyes</a>
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar9">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active linkfont" href="#" id="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active linkfont" id="portfolio" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active linkfont" href="#" id="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 media p-3">
+                    <img src="assets/images/picsmall.jpg" class="ml-3 mt-2" alt="Eric Keyes"/>
+            </div>
+            <div class="col-sm-9">
+                    <div class="card mx-auto mb-5">
+                            <div class="card-body" id="about-card">
+                                <h5 class="card-title namefont text-center" style="color: black">About</h5>
+
+                                <p class="card-text mr-3 mt-4" style="color: black">My name is Eric Keyes, and I am an aspiring Web Developer. Originally from Bensalem, my family moved out to the Harrisburg Area when I was a child. 
+                                    I (thankfully!) was able to escape back into Wawa territory recently.
+                                There was always an underlying interest in code throughout my formative years. Whether it was patching bits of lua together that I googled for a script that I "made" for Garry's Mod, or trying to wrap my
+                                head around what made Morrowind tick, I was always picking apart whatever computer game code I could get my hands on.</p>
+                                <p class="card-text mr-3">As I grew up, my interest in technology stuck with, but without resources to continue college, I found myself landing a job in cellphone sales.
+                                    I found quite a bit of success in the sales world, eventually attaining a store as General Manager. Together with my team, we fostered an incredible working environment and we were very successful in reaching
+                                    our predetermined goals. However, eventually our company (Best Buy) decided that, as a whole, they'd be better off without the Mobile Stores and ended up closing every single one.
+                                </p>
+
+                                <p class="card-text mr-3">At first, losing such a well paying, (seemingly) secure job felt like such a blow. However, it wasn't long before I signed up for the UPENN coding bootcamp program, and I quickly realized
+                                    that I had a legitimate passion for development. Not only was I completely enthralled by creating things with javascript, I found my unique people skills incredibly useful
+                                    in team development situations. So with my unique skillset and background, I hope to be the perfect fit for the industry.
+                                </p>
+                            </div>
+                        </div>
+            </div>
+
+        </div>
+    
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card mt-5 mb-5 mx-auto">
+                    <div class="card-body" id="portfolio-card">
+                        <h5 class="card-title namefont text-center mb-5" style="color: black">Portfolio</h5>
+                        <h1 class="card-title namefont text-center mb-3" style="color: black">Filter:</h1>
+                        <div id="filterbtn_div" class="mb-3 text-center justify-content-center"></div>
+                        <div id="filter_div" class="mb-3 text-center justify-content-center"></div>
+                        <div id="portfolio_div"></div>   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-lg-9 justify-content-center">
+                    <div class="card mx-auto mt-5 mb-5 justify-content-center">
+                        <div class="card-body" id="contact-card">
+                            <h5 class="card-title namefont text-center" style="color: black">Contact</h5>
+
+                            <a class="ml-5 mr-5" target="_blank" href="https://github.com/Ekeyes8500">
+                                <img src="assets/images/github.png" alt="github">
+                            </a>
+                            
+                            <a class="ml-5 mr-5" target="_blank" href="https://www.linkedin.com/in/eric-keyes-6058a2168/">
+                                <img src="assets/images/linkedin.png" alt="linkedin" id="linkedinlogo">
+                            </a>
+
+                            <a class="ml-5 mr-5" target="_blank" href="#">
+                                <img src="assets/images/email.png" alt="email" id="emaillogo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    </div>
+    <div class="row mt-4"></div>
+    <footer class="footer fixed-bottom" style="background-color: black;">
+        <div class="container">
+            <div class="text-center pb-3" style="color: lightgray">&copy; Copyright</div>
+        </div>
+    </footer>
+</body>
+
+</html>
