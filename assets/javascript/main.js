@@ -67,6 +67,7 @@ function portfolioGenerator(x) {
     var newdiv = $("<div>");
     $(newdiv).addClass("media");
     $(newdiv).addClass("mb-5");
+    $(newdiv).addClass("portfolio-holder")
 
     var newtitle = $("<h3>");
     $(newtitle).addClass("media-title");
@@ -76,11 +77,13 @@ function portfolioGenerator(x) {
     $(newpicture).attr("src", x.imageSource);
     $(newpicture).attr("alt", x.imageAlt);
     $(newpicture).attr("id", x.imageId);
-    $(newpicture).addClass("ml-5");
+    $(newpicture).addClass("ml-2");
     $(newpicture).addClass("mr-5");
+    $(newpicture).addClass("portfolio-image")
 
     var textdiv = $("<div>");
     $(textdiv).addClass("media-body");
+    $(textdiv).addClass("portfolio-text");
     
     var text = $("<div>");
     $(text).addClass("media-body");
