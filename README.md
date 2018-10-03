@@ -8,7 +8,6 @@
     -site layout totally revamped
 
 -Used javascript to enhance functionality
-
     -Links at the top now scroll you to a particular part of the page, rather than having three separate pages
     -Portfolio items dynamically generated, filters can be added to filter projects, depending on what employer is looking for
     -Email logo links to the client's email application to send email to me
