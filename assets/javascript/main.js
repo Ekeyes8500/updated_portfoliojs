@@ -72,6 +72,7 @@ function portfolioGenerator(x) {
     var newtitle = $("<h3>");
     $(newtitle).addClass("media-title");
     $(newtitle).text(x.title);
+    $(newtitle).addClass("card-title")
 
     var newpicture = $("<img>");
     $(newpicture).attr("src", x.imageSource);

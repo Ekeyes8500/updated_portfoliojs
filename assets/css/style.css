@@ -208,3 +208,7 @@ a:hover {
         width: 100%;
     }
 } 
+
+.media-title {
+    font-size: 20px;
+}
