@@ -94,11 +94,13 @@ function portfolioGenerator(x) {
     $(newlink).text("Link");
     $(newlink).attr("href", x.link);
     $(newlink).attr("target", "_blank");
+    $(newlink).attr("style", "color: black");
     $(newlink).addClass("mr-3");
 
     var sourcelink = $("<a>");
     $(sourcelink).attr("target", "_blank")
     $(sourcelink).text("Source Link");
+    $(sourcelink).attr("style", "color: black");
     $(sourcelink).attr("href", x.sourceLink);
 
     $(textdiv).append(newtitle); 
