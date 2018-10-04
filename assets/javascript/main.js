@@ -78,7 +78,6 @@ function portfolioGenerator(x) {
     $(newpicture).attr("src", x.imageSource);
     $(newpicture).attr("alt", x.imageAlt);
     $(newpicture).attr("id", x.imageId);
-    $(newpicture).addClass("ml-2");
     $(newpicture).addClass("mr-5");
     $(newpicture).addClass("portfolio-image")
 
