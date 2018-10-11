@@ -199,6 +199,10 @@ a:hover {
     height: 165px;
     width: 165px;
 }
+.portfolio-image {
+    height: 110px;
+    width: 200px;
+}
 
 @media only screen and (max-width: 768px) {
 

@@ -46,11 +46,22 @@ var giphyObject = {
     tags: ["javascript", "html", "bootstrap", "css", "jquery", "api"]
 };
 
+var liriObject = {
+    imageSource: "assets/images/port5.png",
+    imageAlt: "liri node app",
+    imageId: "liriportfolio",
+    link: "https://github.com/Ekeyes8500/liri-node-app",
+    sourceLink: "https://github.com/Ekeyes8500/liri-node-app",
+    title: "Liri Node Search App",
+    description: "A CLI proof of concept NodeJS app that takes in a commands that allows it to search several different APIs. It currently supports the Spotify API, Bands in Town API, and the OMBD API",
+    tags: ["javascript", "api", "nodejs"]
+};
+
 //array that stores all objects
-var projectArray = [rmsObject, starwarsObject, triviaObject, giphyObject];
+var projectArray = [rmsObject, starwarsObject, triviaObject, giphyObject, liriObject];
 
 //tags for the filter generation
-var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "API", "Timers", "Firebase", "Momentjs"];
+var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "API", "Timers", "Firebase", "Momentjs", "NodeJS"];
 
 //an array that stores all current tag values, used mainly for filtering
 var currentTags = [];
