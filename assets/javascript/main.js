@@ -10,7 +10,7 @@ var rmsObject = {
     sourceLink: "https://github.com/Ekeyes8500/project1",
     title: "Roommate Management System (RMS)",
     description: "A proof of concept web app designed to create a persistent, easy to use, household management system. Not only is the planner synced with holidays, but all added events are stored to a firebase server. It also pulls from the bored API to generate randomly inspired events for the users. A proof of concept login, chat, to-do list, and billing system are also present within the app.",
-    tags: ["javascript", "html", "bootstrap", "css", "jquery", "momentjs", "firebase", "api"]
+    tags: ["javascript", "html", "bootstrap", "css", "jquery", "firebase", "api"]
 };
 
 var starwarsObject = {
@@ -32,7 +32,7 @@ var triviaObject = {
     sourceLink: "https://github.com/Ekeyes8500/TriviaGame",
     title: "Trivial Endeavor",
     description: "A web game that challenges the user to historical and famous explorer based questions in an effort for the player to join a doomed expedition to the South Pole.",
-    tags: ["javascript", "html", "bootstrap", "css", "jquery", "timers"]
+    tags: ["javascript", "html", "bootstrap", "css", "jquery"]
 };
 
 var giphyObject = {
@@ -50,7 +50,7 @@ var liriObject = {
     imageSource: "assets/images/port5.png",
     imageAlt: "liri node app",
     imageId: "liriportfolio",
-    link: "https://github.com/Ekeyes8500/liri-node-app",
+    link: "",
     sourceLink: "https://github.com/Ekeyes8500/liri-node-app",
     title: "Liri Node Search App",
     description: "A CLI proof of concept NodeJS app that takes in a commands that allows it to search several different APIs. It currently supports the Spotify API, Bands in Town API, and the OMBD API",
@@ -61,7 +61,7 @@ var liriObject = {
 var projectArray = [rmsObject, starwarsObject, triviaObject, giphyObject, liriObject];
 
 //tags for the filter generation
-var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "API", "Timers", "Firebase", "Momentjs", "NodeJS"];
+var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "API", "Firebase", "NodeJS"];
 
 //an array that stores all current tag values, used mainly for filtering
 var currentTags = [];
@@ -100,13 +100,17 @@ function portfolioGenerator(x) {
     $(text).addClass("media-body");
     $(text).text(x.description);
 
-    var newlink = $("<a>");
-    $(newlink).text("Link");
-    $(newlink).attr("href", x.link);
-    $(newlink).attr("target", "_blank");
-    $(newlink).attr("style", "color: black");
-    $(newlink).addClass("mr-3");
+    if (x.link != "") {
+        var newlink = $("<a>");
+        $(newlink).text("Link");
+        $(newlink).attr("href", x.link);
+        $(newlink).attr("target", "_blank");
+        $(newlink).attr("style", "color: black");
+        $(newlink).addClass("mr-3");
+    }
 
+
+    
     var sourcelink = $("<a>");
     $(sourcelink).attr("target", "_blank")
     $(sourcelink).text("Source Link");
