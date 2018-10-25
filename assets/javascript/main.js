@@ -2,6 +2,17 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 //objects that are loaded into array with all info needed to display
+var inventoryObject = {
+    imageSource: "assets/images/port5.png",
+    imageAlt: "cli app",
+    imageId: "cliportfolio",
+    link: "",
+    sourceLink: "https://github.com/Ekeyes8500/cli_inventory",
+    title: "CLI Inventory App",
+    description: "A proof of concept Command Line Interface Node app that allows users to either buy products as a customer or manage product levels as a manager. All database information stored within a MySQL database.",
+    tags: ["javascript", "nodejs", "mysql"]
+};
+
 var rmsObject = {
     imageSource: "assets/images/port1.png",
     imageAlt: "roommate management system",
@@ -58,10 +69,10 @@ var liriObject = {
 };
 
 //array that stores all objects
-var projectArray = [rmsObject, starwarsObject, triviaObject, giphyObject, liriObject];
+var projectArray = [inventoryObject, rmsObject, starwarsObject, triviaObject, giphyObject, liriObject];
 
 //tags for the filter generation
-var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "API", "Firebase", "NodeJS"];
+var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "NodeJS"];
 
 //an array that stores all current tag values, used mainly for filtering
 var currentTags = [];
