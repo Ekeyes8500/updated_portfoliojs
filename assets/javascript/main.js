@@ -2,16 +2,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 //objects that are loaded into array with all info needed to display
-var inventoryObject = {
-    imageSource: "assets/images/port5.png",
-    imageAlt: "cli app",
-    imageId: "cliportfolio",
-    link: "",
-    sourceLink: "https://github.com/Ekeyes8500/cli_inventory",
-    title: "CLI Inventory App",
-    description: "A proof of concept Command Line Interface Node app that allows users to either buy products as a customer or manage product levels as a manager. All database information stored within a MySQL database.",
-    tags: ["javascript", "nodejs", "mysql"]
-};
 
 var rmsObject = {
     imageSource: "assets/images/port1.png",
@@ -68,8 +58,28 @@ var liriObject = {
     tags: ["javascript", "api", "nodejs"]
 };
 
+//function to create project objects for display
+function Project(imageSource, imageAlt, imageId, link, sourceLink, title, description, tags){
+    this.imageSource = imageSource,
+    this.imageAlt = imageAlt,
+    this.imageId = imageId,
+    this.link = link,
+    this.sourceLink = sourceLink,
+    this.title = title,
+    this.description = description,
+    this.tags = tags
+}
+var inventoryObject = new Project("assets/images/port5.png", 
+"cli app", "cliportfolio", 
+"", 
+"https://github.com/Ekeyes8500/cli_inventory",
+"CLI Inventory App",
+"A proof of concept Command Line Interface Node app that allows users to either buy products as a customer or manage product levels as a manager. All database information stored within a MySQL database.",
+["javascript", "nodejs", "mysql"])
+
 //array that stores all objects
 var projectArray = [inventoryObject, rmsObject, starwarsObject, triviaObject, giphyObject, liriObject];
+
 
 //tags for the filter generation
 var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "NodeJS"];
