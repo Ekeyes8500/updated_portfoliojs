@@ -3,60 +3,9 @@
 
 //objects that are loaded into array with all info needed to display
 
-var rmsObject = {
-    imageSource: "assets/images/port1.png",
-    imageAlt: "roommate management system",
-    imageId: "rmsportfolio",
-    link: "https://ekeyes8500.github.io/project1/",
-    sourceLink: "https://github.com/Ekeyes8500/project1",
-    title: "Roommate Management System (RMS)",
-    description: "A proof of concept web app designed to create a persistent, easy to use, household management system. Not only is the planner synced with holidays, but all added events are stored to a firebase server. It also pulls from the bored API to generate randomly inspired events for the users. A proof of concept login, chat, to-do list, and billing system are also present within the app.",
-    tags: ["javascript", "html", "bootstrap", "css", "jquery", "firebase", "api"]
-};
 
-var starwarsObject = {
-    imageSource: "assets/images/port2.png",
-    imageAlt: "star wars hangman",
-    imageId: "starwarsportfolio",
-    link: "https://ekeyes8500.github.io/Word-Guess-Game/",
-    sourceLink: "https://github.com/Ekeyes8500/Word-Guess-Game",
-    title: "Star Wars Hangman",
-    description: "A simple web game created using only HTML, CSS, Boostrap, and Javascript. Star Wars Hangman challenges the user with several Star Wars themed words to guess.",
-    tags: ["javascript", "html", "bootstrap", "css"]
-};
 
-var triviaObject = {
-    imageSource: "assets/images/port3.png",
-    imageAlt: "trivial endeavor",
-    imageId: "triviaporfolio",
-    link: "https://ekeyes8500.github.io/TriviaGame/",
-    sourceLink: "https://github.com/Ekeyes8500/TriviaGame",
-    title: "Trivial Endeavor",
-    description: "A web game that challenges the user to historical and famous explorer based questions in an effort for the player to join a doomed expedition to the South Pole.",
-    tags: ["javascript", "html", "bootstrap", "css", "jquery"]
-};
 
-var giphyObject = {
-    imageSource: "assets/images/port4.png",
-    imageAlt: "giphy animal search",
-    imageId: "giphyportfolio",
-    link: "https://ekeyes8500.github.io/giphySearch/",
-    sourceLink: "https://github.com/Ekeyes8500/giphySearch",
-    title: "Giphy Animal Search",
-    description: "A mini, proof of concept web app based on creating a personalized giphy search for animals by pulling from the giphy API.",
-    tags: ["javascript", "html", "bootstrap", "css", "jquery", "api"]
-};
-
-var liriObject = {
-    imageSource: "assets/images/port5.png",
-    imageAlt: "liri node app",
-    imageId: "liriportfolio",
-    link: "",
-    sourceLink: "https://github.com/Ekeyes8500/liri-node-app",
-    title: "Liri Node Search App",
-    description: "A CLI proof of concept NodeJS app that takes in a commands that allows it to search several different APIs. It currently supports the Spotify API, Bands in Town API, and the OMBD API",
-    tags: ["javascript", "api", "nodejs"]
-};
 
 //function to create project objects for display
 function Project(imageSource, imageAlt, imageId, link, sourceLink, title, description, tags){
@@ -70,19 +19,75 @@ function Project(imageSource, imageAlt, imageId, link, sourceLink, title, descri
     this.tags = tags
 }
 var inventoryObject = new Project("assets/images/port5.png", 
-"cli app", "cliportfolio", 
-"", 
-"https://github.com/Ekeyes8500/cli_inventory",
-"CLI Inventory App",
-"A proof of concept Command Line Interface Node app that allows users to either buy products as a customer or manage product levels as a manager. All database information stored within a MySQL database.",
-["javascript", "nodejs", "mysql"])
+    "cli app", "cliportfolio", 
+    "", 
+    "https://github.com/Ekeyes8500/cli_inventory",
+    "CLI Inventory App",
+    "A proof of concept Command Line Interface Node app that allows users to either buy products as a customer or manage product levels as a manager. All database information stored within a MySQL database.",
+    ["javascript", "nodejs", "mysql"]
+);
+
+var rmsObject = new Project(
+    "assets/images/port1.png",
+    "roommate management system",
+    "rmsportfolio",
+    "https://ekeyes8500.github.io/project1/",
+    "https://github.com/Ekeyes8500/project1",
+    "Roommate Management System (RMS)",
+    "A proof of concept web app designed to create a persistent, easy to use, household management system. Not only is the planner synced with holidays, but all added events are stored to a firebase server. It also pulls from the bored API to generate randomly inspired events for the users. A proof of concept login, chat, to-do list, and billing system are also present within the app.",
+    ["javascript", "html", "bootstrap", "css", "jquery", "firebase", "api"]
+);
+
+var starwarsObject = new Project(
+    "assets/images/port2.png",
+    "star wars hangman",
+    "starwarsportfolio",
+    "https://ekeyes8500.github.io/Word-Guess-Game/",
+    "https://github.com/Ekeyes8500/Word-Guess-Game",
+    "Star Wars Hangman",
+    "A simple web game created using only HTML, CSS, Boostrap, and Javascript. Star Wars Hangman challenges the user with several Star Wars themed words to guess.",
+    ["javascript", "html", "bootstrap", "css"]
+);
+
+var triviaObject = new Project(
+    "assets/images/port3.png",
+    "trivial endeavor",
+    "triviaporfolio",
+    "https://ekeyes8500.github.io/TriviaGame/",
+    "https://github.com/Ekeyes8500/TriviaGame",
+    "Trivial Endeavor",
+    "A web game that challenges the user to historical and famous explorer based questions in an effort for the player to join a doomed expedition to the South Pole.",
+    ["javascript", "html", "bootstrap", "css", "jquery"]
+);
+
+var falloutObject = new Project(
+    "assets/images/port4.png",
+    "fallout finder",
+    "falloutportfolio",
+    "https://spooky-beast-58911.herokuapp.com/",
+    "https://github.com/Ekeyes8500/falloutFinder",
+    "Fallout Finder",
+    "An express web app that takes in user input on various questions, and hits a hosted API route to determine which Fallout 4 character they are most compatible traveling the wasteland with.",
+    ["javascript", "html", "bootstrap", "css", "jquery", "api", "nodejs", "express"]
+);
+
+var liriObject = new Project(
+    "assets/images/port5.png",
+    "liri node app",
+    "liriportfolio",
+    "",
+    "https://github.com/Ekeyes8500/liri-node-app",
+    "Liri Node Search App",
+    "A CLI proof of concept NodeJS app that takes in a commands that allows it to search several different APIs. It currently supports the Spotify API, Bands in Town API, and the OMBD API",
+    ["javascript", "api", "nodejs"]
+);
 
 //array that stores all objects
-var projectArray = [inventoryObject, rmsObject, starwarsObject, triviaObject, giphyObject, liriObject];
+var projectArray = [falloutObject, inventoryObject, rmsObject, starwarsObject, triviaObject, liriObject];
 
 
 //tags for the filter generation
-var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "NodeJS"];
+var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "NodeJS", "Express"];
 
 //an array that stores all current tag values, used mainly for filtering
 var currentTags = [];
