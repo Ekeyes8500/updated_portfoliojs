@@ -16,7 +16,10 @@ function Project(imageSource, imageAlt, imageId, link, sourceLink, title, descri
     this.sourceLink = sourceLink,
     this.title = title,
     this.description = description,
-    this.tags = tags
+    this.tags = tags,
+    this.placeArray = function(){
+        
+    }
 }
 var inventoryObject = new Project("assets/images/port5.png", 
     "cli app", "cliportfolio", 
@@ -82,12 +85,23 @@ var liriObject = new Project(
     ["javascript", "api", "nodejs"]
 );
 
+var kingdomObject = new Project(
+    "assets/images/port6.png",
+    "self improvment kingdom",
+    "kingdomportfolio",
+    "https://nameless-thicket-61553.herokuapp.com/",
+    "https://github.com/brijamfitz/project-2",
+    "Self-Improvment Kingdom",
+    "Build your army and battle your way to self-improvement in this full-stack, gamified task manager!",
+    ["javascript", "api", "nodejs", "express", "mysql", "jquery", "handlebars", "html", "css", "bootstrap"]
+);
+
 //array that stores all objects
-var projectArray = [falloutObject, inventoryObject, rmsObject, starwarsObject, triviaObject, liriObject];
+var projectArray = [kingdomObject, falloutObject, inventoryObject, rmsObject, starwarsObject, triviaObject, liriObject];
 
 
 //tags for the filter generation
-var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "NodeJS", "Express"];
+var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "NodeJS", "Express", "Handlebars"];
 
 //an array that stores all current tag values, used mainly for filtering
 var currentTags = [];
