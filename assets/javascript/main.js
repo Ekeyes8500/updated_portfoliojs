@@ -27,7 +27,7 @@ var inventoryObject = new Project("assets/images/port5.png",
     "https://github.com/Ekeyes8500/cli_inventory",
     "CLI Inventory App",
     "A proof of concept Command Line Interface Node app that allows users to either buy products as a customer or manage product levels as a manager. All database information stored within a MySQL database.",
-    ["javascript", "nodejs", "mysql"]
+    ["javascript", "node.js", "mysql"]
 );
 
 var rmsObject = new Project(
@@ -71,7 +71,7 @@ var falloutObject = new Project(
     "https://github.com/Ekeyes8500/falloutFinder",
     "Fallout Finder",
     "An express web app that takes in user input on various questions, and hits a hosted API route to determine which Fallout 4 character they are most compatible traveling the wasteland with.",
-    ["javascript", "html", "bootstrap", "css", "jquery", "api", "nodejs", "express"]
+    ["javascript", "html", "bootstrap", "css", "jquery", "api", "node.js", "express"]
 );
 
 var liriObject = new Project(
@@ -81,8 +81,8 @@ var liriObject = new Project(
     "",
     "https://github.com/Ekeyes8500/liri-node-app",
     "Liri Node Search App",
-    "A CLI proof of concept NodeJS app that takes in a commands that allows it to search several different APIs. It currently supports the Spotify API, Bands in Town API, and the OMBD API",
-    ["javascript", "api", "nodejs"]
+    "A CLI proof of concept Node.js app that takes in a commands that allows it to search several different APIs. It currently supports the Spotify API, Bands in Town API, and the OMBD API",
+    ["javascript", "api", "node.js"]
 );
 
 var kingdomObject = new Project(
@@ -93,7 +93,7 @@ var kingdomObject = new Project(
     "https://github.com/brijamfitz/project-2",
     "Self-Improvment Kingdom",
     "Build your army and battle your way to self-improvement in this full-stack, gamified task manager!",
-    ["javascript", "api", "nodejs", "express", "mysql", "jquery", "handlebars", "html", "css", "bootstrap"]
+    ["javascript", "api", "node.js", "express", "mysql", "jquery", "handlebars", "html", "css", "bootstrap"]
 );
 
 //array that stores all objects
@@ -101,7 +101,7 @@ var projectArray = [kingdomObject, falloutObject, inventoryObject, rmsObject, st
 
 
 //tags for the filter generation
-var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "NodeJS", "Express", "Handlebars"];
+var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "Node.js", "Express", "Handlebars"];
 
 //an array that stores all current tag values, used mainly for filtering
 var currentTags = [];
@@ -130,7 +130,8 @@ function portfolioGenerator(x) {
     $(newpicture).attr("alt", x.imageAlt);
     $(newpicture).attr("id", x.imageId);
     $(newpicture).addClass("mr-5");
-    $(newpicture).addClass("portfolio-image")
+    $(newpicture).addClass("portfolio-image");
+
 
     var textdiv = $("<div>");
     $(textdiv).addClass("media-body");
@@ -147,6 +148,7 @@ function portfolioGenerator(x) {
         $(newlink).attr("target", "_blank");
         $(newlink).attr("style", "color: black");
         $(newlink).addClass("mr-3");
+
     }
 
 
