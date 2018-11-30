@@ -249,7 +249,6 @@ $(document).ready(function() {
         if (isNew === true){
             filterTracker++;
             currentTags.push(newFilter.toLowerCase());
-            console.log(currentTags);
             var filterButton = $("<button>");
             $(filterButton).addClass("btn");
             $(filterButton).addClass("btn-Light");
@@ -267,11 +266,9 @@ $(document).ready(function() {
 
     $(document).on("click", ".filterBtn", function(){
         var removedTag = ($(this).attr("val"))
-        console.log(removedTag);
         for (i = 0; i < currentTags.length; i++){
             if (removedTag === currentTags[i]){
                 currentTags.splice(i, 1);
-                console.log(currentTags);
             }
         }
         $(this).remove();
