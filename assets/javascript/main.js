@@ -90,7 +90,7 @@ var kingdomObject = new Project(
     "self improvement kingdom",
     "kingdomportfolio",
     "https://nameless-thicket-61553.herokuapp.com/",
-    "https://github.com/brijamfitz/project-2",
+    "https://github.com/Ekeyes8500/self-improvement-kingdom",
     "Self-Improvement Kingdom",
     "Build your army and battle your way to self-improvement in this full-stack, gamified task manager!",
     ["javascript", "api", "node.js", "express", "mysql", "jquery", "handlebars", "html", "css", "bootstrap"]
