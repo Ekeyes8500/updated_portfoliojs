@@ -114,7 +114,7 @@ var reccaObject = new Project(
     "http://recca.herokuapp.com/",
     "https://github.com/brijamfitz/Recca",
     "Recca",
-    "Create a list and track what media you want to view and recommend your favorites to friends in this full stack, social media web app.",
+    "Create a list and track what media you want to view and recommend your favorites to friends in this full stack, social media web app. Fully integrated with four external APIs to enable searching for almost any media item you can think of!",
     ["javascript", "react", "node.js", "api", "sass", "css", "html", "bootstrap", "express", "mongodb"]
 )
 
