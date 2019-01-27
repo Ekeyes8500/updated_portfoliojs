@@ -121,7 +121,7 @@ var reccaObject = new Project(
 
 
 //array that stores all objects
-var projectArray = [reccaObject, phillyObject, kingdomObject, falloutObject, inventoryObject, rmsObject, starwarsObject, triviaObject, liriObject];
+var projectArray = [reccaObject, kingdomObject, phillyObject, falloutObject, inventoryObject, rmsObject, starwarsObject, triviaObject, liriObject];
 
 
 //tags for the filter generation
