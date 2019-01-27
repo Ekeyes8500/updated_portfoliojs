@@ -96,12 +96,36 @@ var kingdomObject = new Project(
     ["javascript", "api", "node.js", "express", "mysql", "jquery", "handlebars", "html", "css", "bootstrap"]
 );
 
+var phillyObject = new Project(
+    "assets/images/port8.png",
+    "philly music scraper",
+    "phillyportfolio",
+    "https://sheltered-scrubland-86761.herokuapp.com/",
+    "https://github.com/Ekeyes8500/philly-music-scraper",
+    "Philly Music Scraper",
+    "Track and comment on upcoming shows on a curated list of Philly venues, all scraped to one place!",
+    ["javascript", "api", "node.js", "express", "mongodb", "jquery", "handlebars", "html", "css", "bootstrap", "scraper"]
+);
+
+var reccaObject = new Project(
+    "assets/images/port7.png",
+    "recca",
+    "reccaportfolio",
+    "http://recca.herokuapp.com/",
+    "https://github.com/brijamfitz/Recca",
+    "Recca",
+    "Create a list and track what media you want to view and recommend your favorites to friends in this full stack, social media web app.",
+    ["javascript", "react", "node.js", "api", "sass", "css", "html", "bootstrap", "express", "mongodb"]
+)
+
+
+
 //array that stores all objects
-var projectArray = [kingdomObject, falloutObject, inventoryObject, rmsObject, starwarsObject, triviaObject, liriObject];
+var projectArray = [reccaObject, phillyObject, kingdomObject, falloutObject, inventoryObject, rmsObject, starwarsObject, triviaObject, liriObject];
 
 
 //tags for the filter generation
-var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "CSS", "JQuery", "MySQL", "API", "Firebase", "Node.js", "Express", "Handlebars"];
+var tags = ["-Add Filter-", "Javascript", "HTML", "Bootstrap", "React", "Sass", "CSS", "JQuery", "MySQL", "API", "Firebase", "MongoDB", "Node.js", "Express", "Handlebars", "Scraper"];
 
 //an array that stores all current tag values, used mainly for filtering
 var currentTags = [];
